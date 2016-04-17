@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Name: UITextField!
+    @IBOutlet weak var Age: UITextField!
+    @IBOutlet weak var Place: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func Newtext(sender: AnyObject) {
+    Place.text = "Hello world"
+    
 }
 
+}
