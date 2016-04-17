@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func Newtext(sender: AnyObject) {
-    Place.text = "Hello world"
+    Place.text = "Hello, \(Name.text) you are \(Age.text)"
     
 }
 
