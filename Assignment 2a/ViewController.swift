@@ -25,8 +25,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func Newtext(sender: AnyObject) {
-    Place.text = "Hello, \(Name.text) you are \(Age.text)"
-    
-}
+        // String?
+        if let ageText = Age.text {
+            // String
+            if let age = Int(ageText) {
+                if age >= (21) {
+                    Place.text = "You can drink"
+                   
+                }else if age >= 18{
+                    Place.text = "You can vote."
+                }else if age >= 16 {
+                    Place.text = "You can't drive"
+                }else {
+                    Place.text = "Grow up!"
+                }
+            }
+        }
+        
+        
+        
+    }
 
 }
